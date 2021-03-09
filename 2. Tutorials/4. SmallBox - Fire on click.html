@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SmallBox - Tutorial #4</title>
+ 
+	<!-- jQuery Basic Library ( you can use your own version ) -->
+	<script src="static/js/jquery-1.11.1.min.js"></script>
+
+	<!-- Metro Notification Style -->
+	<link rel="stylesheet" type="text/css" href="static/css/MetroNotificationStyle.min.css">
+
+	<!-- Metro Notification JS -->
+	<script src="static/js/MetroNotification.min.js"></script>
+
+	<!-- Font Awesome v4.2 -->
+	<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+
+
+	<!-- Demos Style -->
+	<style type="text/css">
+		body{
+			font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		}
+		h1,h2,p{
+			font-weight: lighter;
+		}
+	</style>
+
+</head>
+<body>
+
+
+<h1>Smallbox</h1>
+<h2>Fire on click</h2>
+
+<button id="butPress">Press Me</button>
+
+
+
+
+
+<script type="text/javascript">
+
+$("#butPress").on( "click", function(){ 
+
+
+	$.smallBox({
+	  title:"Hi there",
+	  content:"Some content",
+	  img:"static/img/pic1.png",
+	  fa:"fa-star-o",
+	  colortime:1500,
+	  colors:["#0F6FB8","#0C5891"],
+	});
+
+});
+
+</script>
+
+</body>
+</html>

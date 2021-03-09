@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Loading - Tutorial #18</title>
+ 
+	<!-- jQuery Basic Library ( you can use your own version ) -->
+	<script src="static/js/jquery-1.11.1.min.js"></script>
+
+	<!-- Metro Notification Style -->
+	<link rel="stylesheet" type="text/css" href="static/css/MetroNotificationStyle.min.css">
+
+	<!-- Metro Notification JS -->
+	<script src="static/js/MetroNotification.min.js"></script>
+
+	<!-- Font Awesome v4.2 -->
+	<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+
+
+	<!-- Demos Style -->
+	<style type="text/css">
+		body{
+			font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		}
+		h1,h2,p{
+			font-weight: lighter;
+		}
+
+		#butClose{
+			z-index: 999999999999999999999;
+			position: fixed;
+			bottom: 10px;
+			left: 10px;	
+		}
+
+
+	</style>
+
+</head>
+<body>
+
+
+<h1>Loading</h1>
+<h2>Basic Call</h2>
+
+
+<button id="butCall">Call</button>
+
+<button id="butClose">Close Loading Manually</button>
+
+
+<script type="text/javascript">
+
+$("#butCall").on("click",function(){
+
+
+		$.metroLoading({
+		  title: "Loading Things...",
+		  content:"Please wait until process finish",
+		  fa: "fa-refresh",
+		});
+
+});
+
+
+$("#butClose").on("click",function(){
+	$.metroLoadingKill();
+});
+
+</script>
+
+</body>
+</html>

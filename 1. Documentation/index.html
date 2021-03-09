@@ -1,0 +1,1676 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+	<title>Metro Notifications v7 - A complete set of Metro Elements</title>
+ 	<meta name="description" content="All in one metro place :)">
+	<meta name="author" content="Klerith">
+	<meta name="copyright" content="Klerith">
+	<meta name="generator" content="Documenter v2.0 http://rxa.li/documenter">
+	<meta name="date" content="2014-09-30T00:00:00+02:00">
+	
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="assets/css/documenter_style.css" rel="stylesheet">
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    
+	
+	<style>
+		html, body{background-color:#FFFFFF;color:#383838;}
+		h1,h2,h3,h4,h5,h6{color:#383838;}
+		section table{background-color:#FFFFFF;}
+		::-moz-selection{background:#444444;color:#DDDDDD;}
+		::selection{background:#444444;color:#DDDDDD;}
+		a.brand{background-image:url();}
+		a, a:hover, a:active{color:#0000FF;}
+		hr{border-top:1px solid #EBEBEB;border-bottom:1px solid #FFFFFF;}
+		div.navbar-inner, .navbar .nav li ul{background:#DDDDDD;color:#222222;}
+		a.btn-navbar{background:#DDDDDD;color:#222222;}
+		.navbar .nav li a{color:#222222;text-shadow:1px 1px 0px #EEEEEE;}
+		.navbar .nav li a:hover, .navbar .nav li.active a{text-shadow:none;}
+		div.navbar-inner ul{}
+		.marketing-byline{color:#FFFFFF;}
+		.navbar .nav > li a{color:#444444;}
+		.navbar .nav > li a:hover, a.btn-navbar:hover{background:#444444;color:#DDDDDD;}
+		.navbar .nav .active > a, .navbar .nav .active > a:hover, a.btn-navbar:active{background-color:#444444;color:#DDDDDD;}
+		.navbar .nav li ul li a:hover{background:#444444;color:#DDDDDD;}
+		.navbar .nav li ul li a:active{background:#444444;color:#DDDDDD;}
+		.btn-primary {
+			  background-image: -moz-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -ms-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -webkit-gradient(linear, 0 0, 0 0088CC%, from(#DDDDDD), to(#0044CC));
+			  background-image: -webkit-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -o-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: linear-gradient(top, #0088CC, #0044CC);
+			  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0088CC', endColorstr='#0044CC', GradientType=0);
+			  border-color: #0044CC #0044CC #bfbfbf;
+			  color:#FFFFFF;
+		}
+		.btn-primary:hover,
+		.btn-primary:active,
+		.btn-primary.active,
+		.btn-primary.disabled,
+		.btn-primary[disabled] {
+		  background-color: #0044CC;
+		}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+	</style>
+	
+	
+	
+    </head>
+    
+<body class="documenter-project-metro-notifications-v7" data-spy="scroll" id="top">
+
+<!-- Documentation Navbar -->
+
+<div class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container"> 
+			<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a> 
+			<a class="brand" href="#">Metro Notifications v7 - A complete set of Metro Elements</a>
+			<div class="nav-collapse">
+			<ul class="nav">
+					
+			<li><a href="#updating_from_version_6" title="Updating from version 6?">Updating from version 6?</a></li>
+			<li><a href="#change_log" title="Change Log">Change Log</a></li>
+			<li><a href="#installation" title="Installation">Installation</a></li>
+			<li><a href="#get_started" title="Get Started">Get Started</a></li>
+			<li><a href="#basic_call" title="Basic Call">Basic Call</a></li>
+			<li><a href="#plugin_properties" title="Plugin Properties">Plugin Properties</a></li>
+			<li><a href="#kill_the_plugins" title="Kill the Plugins">Kill the Plugins</a></li>
+			<li><a href="#smallbox_properties" title="SmallBox Properties">SmallBox Properties</a></li>
+			<li><a href="#bigbox_properties" title="BigBox Properties">BigBox Properties</a></li>
+			<li><a href="#messagebox_and_inputs" title="Messagebox and Inputs">Messagebox and Inputs</a></li>
+			<li><a href="#metro_loading" title="Metro Loading">Metro Loading</a></li>
+			<li><a href="#metro_sidepanel" title="Metro SidePanel">Metro SidePanel</a></li>
+			<li><a href="#ending" title="Ending">Ending</a></li>
+
+			</ul>
+			</div>
+		</div>
+	</div>
+</div> <!-- End of Navbar -->
+
+<!-- Main Container Beginning -->			
+			
+<div class="container" id="documenter_content">
+    
+	<div id="documenter-cover">
+	<div class="masthead">
+	    <h1>Metro Notifications v7 - A complete set of Metro Elements</h1>
+	    <p>All in one metro place :)</p>
+	    <ul class="marketing-byline">
+			<li>created: 01/28/2013</li>
+			<li>latest update: 09/30/2014</li>
+			<li>by: Klerith</li>
+			<li><a href="http://codecanyon.net/user/klerith">codecanyon.net/user/klerith</a></li>
+		</ul>
+	    <p class="download-info">
+			<a href="http://codecanyon.net/user/klerith?ref=klerith" class="btn btn-primary btn-large">Support Page</a> <a href="http://codecanyon.net/user/klerith/portfolio?ref=klerith" class="btn btn-large">Portfolio</a> 
+		</p>
+		
+	</div> <!-- masthead -->
+	
+   <div id="intro">
+    <p class="highlight hero-unit">Thank you for supporting my code.</p>
+   </div> <!-- intro -->
+   
+	</div>
+      
+  <section id="updating_from_version_6">
+	<div class="page-header"><h3>Updating from version 6?</h3><hr class="notop"></div>
+<p>
+	Hi,</p>
+<p>
+	&nbsp;</p>
+<p>
+	Before we start, I refactor all the code, all the style, all from the ground using new techniques that I acquired since I create this plugin from the first time.</p>
+<p>
+	&nbsp;</p>
+<p>
+	If is your first Metro Notification experience you can jump to the Properties, Generator or tutorials.</p>
+<p>
+	&nbsp;</p>
+<h1>
+	BEFORE UPDATE FROM v6 or lower</h1>
+<p>
+	All the properties are now in lower case, so I made some mistakes in the previous version.</p>
+<p>
+	I recommend you to use the New Metro Generator code, to test and create the code.</p>
+<p>
+	CSS3 animations are gone now, I use JavaScript animations that use hardware if is possible.</p>
+<p>
+	&nbsp;</p>
+<p>
+	Please, Please, check the tutorials again, Think this is a TOTAL New Plugin, test it, feel it, and then update your pages, you may need to change a couple of properties CASE.</p>
+<p>
+	All the properties are called the same, but all are in lower case.</p>
+<p>
+	By the way, Tons of properties were added on every plugin.</p>
+<p>
+	New HD icons and font awesome is now required.</p>
+<p>
+	&nbsp;</p>
+<p>
+	You just need to replace your current MetroNotification.js for the New MetroNotification.js and MetroNotificationStyle.css for the new one.</p>
+<p>
+	&nbsp;</p>
+<p>
+	Make sure of the property case and plugin case call.</p>
+<p>
+	&nbsp;</p>
+<p>
+	Metro Generator was improve a lot, is better, powerful and easy to use, can Create and customize every plugin like never before and create custom Notification with a Graphic Interface.</p>
+<p>
+	&nbsp;</p>
+<p>
+	That&#39;s all.</p>
+<p>
+	Thank you for making this update possible with all your suggestions, I put a lot! of effort to make this plugin better, I want Metro Notification as a Elite plugin, that why I made big changes even in the Demo Site.</p>
+</section>
+<section id="change_log">
+	<div class="page-header"><h3>Change Log</h3><hr class="notop"></div>
+<h5 style="margin: 0px 0px 18px; padding: 0px; border: 0px; outline: 0px; font-weight: 100; font-size: 20px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56);">
+	Last Version v7</h5>
+<p>
+	Better than Ever, I rebuild all the plugin using new knowledge that I acquired since I create the first version</p>
+<p>
+	New features</p>
+<ul>
+	<li>
+		New animation</li>
+	<li>
+		Re Factor / Re Style every single plugin</li>
+	<li>
+		Retina, Retina HD, High Definition Screen Support</li>
+	<li>
+		Touch support is way better</li>
+</ul>
+<ul>
+	<li>
+		Smallboxes
+		<ul>
+			<li>
+				Better touch responsiveness</li>
+			<li>
+				Smallboxes can be place in all the 4 corners of the screen</li>
+			<li>
+				New close animation</li>
+			<li>
+				New close on click methods</li>
+			<li>
+				Now Smallboxes can hold unlimited Buttons</li>
+			<li>
+				Better color transition</li>
+			<li>
+				Added Sound Path Property</li>
+			<li>
+				Smallbox width is a property</li>
+			<li>
+				Font Awesome support</li>
+			<li>
+				New icon placement&nbsp;</li>
+			<li>
+				Color on mouse hover and mouse out is animated</li>
+			<li>
+				delay property</li>
+			<li>
+				Kill Smallboxes function added</li>
+		</ul>
+	</li>
+</ul>
+<p>
+	&nbsp;</p>
+<ul>
+	<li>
+		BigBoxes
+		<ul>
+			<li>
+				Can be placed on both bottom corners</li>
+			<li>
+				Better style</li>
+			<li>
+				Taps re designed</li>
+			<li>
+				Width property added</li>
+			<li>
+				Font Awesome support</li>
+			<li>
+				delay property</li>
+			<li>
+				Now can hold buttons</li>
+			<li>
+				soundpath property added</li>
+			<li>
+				Better transitions</li>
+			<li>
+				Kill all Bigboxes function added</li>
+		</ul>
+	</li>
+</ul>
+<p>
+	&nbsp;</p>
+<ul>
+	<li>
+		Metro MessageBox
+		<ul>
+			<li>
+				New Style</li>
+			<li>
+				New Animations</li>
+			<li>
+				Hover color animated</li>
+			<li>
+				Buttons now can hold Font Awesome Icon</li>
+			<li>
+				Default property added</li>
+			<li>
+				Maxleght property added on inputs</li>
+			<li>
+				Character counter added</li>
+			<li>
+				sound path property added</li>
+			<li>
+				Block screen added</li>
+			<li>
+				Timeout property added</li>
+			<li>
+				Email, TextArea are the new input boxes</li>
+			<li>
+				Select Box now with Values support</li>
+			<li>
+				Enter Key on inputs fires the default button</li>
+		</ul>
+	</li>
+</ul>
+<p>
+	&nbsp;</p>
+<ul>
+	<li>
+		Metro Loading
+		<ul>
+			<li>
+				New Style</li>
+			<li>
+				font awesome support</li>
+			<li>
+				block page property added</li>
+			<li>
+				Special Loading added</li>
+			<li>
+				Re factor all the loading code.</li>
+			<li>
+				New close loading funciton</li>
+		</ul>
+	</li>
+</ul>
+<p>
+	&nbsp;</p>
+<ul>
+	<li>
+		Metro SidePanel
+		<ul>
+			<li>
+				Complete renew functionality</li>
+			<li>
+				Better UI</li>
+			<li>
+				iframe support</li>
+			<li>
+				iframe cache property addded</li>
+			<li>
+				Touch outside to close</li>
+			<li>
+				blocked property added</li>
+			<li>
+				Font Awesome ready</li>
+			<li>
+				width property added</li>
+			<li>
+				Timeouts</li>
+		</ul>
+	</li>
+</ul>
+<p>
+	&nbsp;</p>
+<p>
+	Much more, but I think you got the Idea.</p>
+<p>
+	&nbsp;</p>
+<h5 style="margin: 0px 0px 18px; padding: 0px; border: 0px; outline: 0px; font-weight: 100; font-size: 20px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56);">
+	&nbsp;</h5>
+<p>
+	v6</p>
+<h5 style="margin: 0px 0px 18px; padding: 0px; border: 0px; outline: 0px; font-weight: 100; font-size: 20px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56);">
+	<span style="font-size: 12px;">I completely changed the Side Panel. Now is called like the other plugins. if you where using it in your project, please do not update until you change it in your developer machine with the new Sidepanel.</span></h5>
+<div style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56);">
+	&nbsp;</div>
+<div style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56);">
+	- New Metro Generator (version 3)</div>
+<div style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56);">
+	&nbsp; &nbsp; &nbsp;- Now, the generator can create every plugin and use all the properties added in version 5, and the new ones of version 6</div>
+<div style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56);">
+	- Bug fixes</div>
+<div style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56);">
+	- Totally renew SidePanel</div>
+<div style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56);">
+	- Side panel, now is called like a plugin</div>
+<div style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56);">
+	- Check the Metro Generator to understand the properties of the new sidepanel and new stuff&nbsp;</div>
+<div style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56);">
+	&nbsp; &nbsp;&nbsp;<span class="Apple-tab-span" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-style: inherit; font-family: inherit; vertical-align: baseline; white-space: pre;"> </span>&nbsp;- For using the old version visit this site: http://srobbin.com/jquery-pageslide/</div>
+<div style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56);">
+	&nbsp; &nbsp;&nbsp;<span class="Apple-tab-span" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-style: inherit; font-family: inherit; vertical-align: baseline; white-space: pre;"> </span>&nbsp;- I was using that version from srobbin, but now I create my own, I hope you enjoy the new one.Version 6</div>
+<div style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56);">
+	&nbsp;</div>
+<div style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56);">
+	<span style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: 700; font-style: inherit; font-family: inherit; vertical-align: baseline;">V 5</span></div>
+<div style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56);">
+	Mayor update, with a lot of new features and bug fixes</div>
+<div style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56);">
+	&nbsp;</div>
+<div style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56);">
+	- Smallboxes now has animation before disappear</div>
+<div style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56);">
+	- New property for small boxes. Now, can change live the background color&nbsp;</div>
+<div style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56);">
+	- Firefox sound now supported</div>
+<div style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56);">
+	- Esthetic changes on Big boxes</div>
+<div style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56);">
+	- Massive changes on Metro Messagebox, but functions and callbacks still the same</div>
+<div style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56);">
+	- New Metro Messagebox properties</div>
+<div style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56);">
+	&nbsp; &nbsp;- Opacity</div>
+<div style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56);">
+	&nbsp; &nbsp;- backgroundcolor</div>
+<div style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56);">
+	&nbsp; &nbsp;- backgroundcontent</div>
+<div style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56);">
+	&nbsp; &nbsp;- changeback</div>
+<div style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56);">
+	&nbsp; &nbsp;- changecontent</div>
+<div style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56);">
+	- Mayor updates to the loading plugin.</div>
+<div style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56);">
+	- New Loading Properties</div>
+<div style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56);">
+	&nbsp; &nbsp;- backgroundcolor</div>
+<div style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56);">
+	&nbsp; &nbsp;- backgroundcontent</div>
+<div style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56);">
+	&nbsp; &nbsp;- opacity</div>
+<div style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56);">
+	&nbsp; &nbsp;- colortime</div>
+<div style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56);">
+	&nbsp; &nbsp;- colors</div>
+<div style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56);">
+	&nbsp; &nbsp;- changeback</div>
+<div style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56);">
+	&nbsp; &nbsp;- changecontent</div>
+<div style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56);">
+	- MetroUnloading function simplier and better.</div>
+<div style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56);">
+	&nbsp;</div>
+<div style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56);">
+	<span style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: 700; font-style: inherit; font-family: inherit; vertical-align: baseline;">V 4.5</span></div>
+<div style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56);">
+	Update New property added to Small Notification, BigNotification, Messagebox and Inputbox.&nbsp;</div>
+<div style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56);">
+	&nbsp;</div>
+<div style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56);">
+	sound: true/false&nbsp;</div>
+<div style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56);">
+	&nbsp;</div>
+<div style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56);">
+	This property controls if you want to play the sound or not.&nbsp;</div>
+<div style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56);">
+	&nbsp;</div>
+<div style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56);">
+	<span style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: 700; font-style: inherit; font-family: inherit; vertical-align: baseline;">V 4.0&nbsp;</span></div>
+<div style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56);">
+	Update A Mayor update. This plugin is responsive now (except for the sidepanel, I&rsquo;m working in that), but the other plugins are ready for mobile devises.</div>
+<div style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56);">
+	IE8 support&hellip; I was more complicated that I expected, but works in that browser. (Thank you MyOrange)</div>
+<div style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56);">
+	&nbsp;</div>
+<div style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56);">
+	The changes are in the MetroNotification.js file and the CSS, backup your custom functions and styles, replace the previous files and then apply again your changes.</div>
+<div style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56);">
+	&nbsp;</div>
+<div style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56);">
+	<span style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: 700; font-style: inherit; font-family: inherit; vertical-align: baseline;">V 3.0&nbsp;</span></div>
+<div style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56);">
+	Update New Plugin available. Metro Loading. You can check in the live preview. There was a mayor updates, the css and js change, so back up you custom functions and then replace your files.</div>
+<div style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56);">
+	&nbsp;</div>
+<div style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56);">
+	<span style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: 700; font-style: inherit; font-family: inherit; vertical-align: baseline;">V 2.0</span></div>
+<div style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56);">
+	Update jQuery 1.9 ready. To update just back up the Metro Notifications file if you have some custom functions in it. Replace that file with the new one and paste your functions again</div>
+<div style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56);">
+	&nbsp;</div>
+<div style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56);">
+	<span style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: 700; font-style: inherit; font-family: inherit; vertical-align: baseline;">V 1.5.2&nbsp;</span></div>
+<div style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56);">
+	You can set the MetroNotification.js file in the &lt;head&gt; section.</div>
+<div style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56);">
+	&nbsp;</div>
+<div style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56);">
+	<span style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: 700; font-style: inherit; font-family: inherit; vertical-align: baseline;">V1.5</span></div>
+<div style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56);">
+	First release</div>
+</section>
+<section id="installation">
+	<div class="page-header"><h3>Installation</h3><hr class="notop"></div>
+<ol>
+	<li>
+		Open the &quot;5. Main Files&quot; Folder</li>
+	<li>
+		Copy the Static folder to your project.</li>
+	<li>
+		Add the respective reference to the Font-Awesome.css, MetroNotification.js and MetroNotificationStyle.css</li>
+</ol>
+<p>
+	&nbsp;</p>
+<p>
+	Like this:</p>
+<p>
+	&nbsp;</p>
+<pre class="prettyprint lang-html linenums">
+&lt;!-- jQuery Basic Library ( you can use your own version ) --&gt;
+&lt;script src=&quot;static/js/jquery-1.11.1.min.js&quot;&gt;&lt;/script&gt;
+
+
+&lt;!-- Metro Notification Style --&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;static/css/MetroNotificationStyle.min.css&quot;&gt;
+
+
+&lt;!-- Metro Notification JS --&gt;
+&lt;script src=&quot;static/js/MetroNotification.min.js&quot;&gt;&lt;/script&gt;
+
+
+&lt;!-- Font Awesome v4.2 --&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;font-awesome/css/font-awesome.min.css&quot;&gt;</pre>
+<p>
+	&nbsp;</p>
+<p>
+	is very important to understand the following:</p>
+<ol>
+	<li>
+		I don&#39;t use a Custom jQuery Version. If you are using any from 1.7, you can use that instead.</li>
+	<li>
+		MetroNotification.js, REQUIRES jQuery, so, make sure you place that file after importing jQuery</li>
+	<li>
+		Font-Awesome 4.2 is included, you can update Font-Awesome by replacing those files.</li>
+	<li>
+		Font-Awesome is required for BigBoxes and all the &quot;fa&quot; properties.</li>
+</ol>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+</section>
+<section id="get_started">
+	<div class="page-header"><h3>Get Started</h3><hr class="notop"></div>
+<p>
+	If you can see when you uncompress the file, there are 5 folders. I will explain every one:</p>
+<p>
+	&nbsp;</p>
+<ol>
+	<li>
+		&nbsp;&quot;1. Documentation&quot; : This is the documentation that you are reading right now, is not required at all. You can delete this folder if you want.</li>
+	<li>
+		&quot;2. Tutorials&quot;: This contains 20 tutorials about every plugin and how to use it. Is a good step to start, even if you are a Metro Notification Expert, because I add new properties that you will love.</li>
+	<li>
+		&quot;3. Code Generator&quot;: The best way to get the code done, I create a brand new one that is better. You can use and create Metro Notifications with all the power that version 7 has to offer</li>
+	<li>
+		&quot;4. Icons&quot;: I include 1,886 HD Icons just for you, thanks to icons8. Also, there is a reference to Font-Awesome. You have all the power of FA 4.2</li>
+	<li>
+		&quot;5. Min Files and Structure&quot;: this contains all the files needed to run, also with the Minified version that is super compress for a better loading times.</li>
+</ol>
+<p>
+	&nbsp;</p>
+</section>
+<section id="basic_call">
+	<div class="page-header"><h3>Basic Call</h3><hr class="notop"></div>
+<p>
+	All the plugins work similar, so I will explain a Basic call. But remember, open tutorial folder so you can get a better understanding and use examples that work in your computer.</p>
+<p>
+	&nbsp;</p>
+<pre class="prettyprint lang-js linenums">
+&lt;!-- Launch a SmallBox on form load --&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+
+
+$(document).ready(function(){ 
+
+    $.smallBox({
+        content:&quot;Hi there&quot;,
+    });
+
+});
+
+
+&lt;/script&gt;</pre>
+<p>
+	&nbsp;</p>
+<p>
+	That&#39;s all, you can add properties to customize the default behavior and aspect.</p>
+<p>
+	&nbsp;</p>
+<p>
+	Like this for example:</p>
+<p>
+	&nbsp;</p>
+<pre class="prettyprint lang-js linenums">
+&lt;script type=&quot;text/javascript&quot;&gt;
+
+$(document).ready(function(){ 
+
+   $.smallBox({
+       title:&quot;Your Title&quot;,
+       content:&quot;Some content&quot;,
+       icon:&quot;static/img/origami.png&quot;,
+       color:&quot;#AD0C8D&quot;,
+   });
+
+});
+
+&lt;/script&gt;</pre>
+<div>
+	That will fire a SmallBox on form load with a custom title, content, icon and color.</div>
+<div>
+	&nbsp;</div>
+</section>
+<section id="plugin_properties">
+	<div class="page-header"><h3>Plugin Properties</h3><hr class="notop"></div>
+<p>
+	As you can see, there are properties that are the same between plugins as unique properties that only exist in a specifict Notification.</p>
+<p>
+	&nbsp;</p>
+<p>
+	So I will explain plugin by plugin.&nbsp;</p>
+</section>
+<section id="kill_the_plugins">
+	<div class="page-header"><h3>Kill the Plugins</h3><hr class="notop"></div>
+<p>
+	If you need to manually close all the plugins:</p>
+<p>
+	&nbsp;</p>
+<p>
+	This are the functions that you need to call.</p>
+<p>
+	&nbsp;</p>
+<pre class="prettyprint lang-js linenums">
+&lt;script type=&quot;text/javascript&quot;&gt;
+
+$.smallBoxKill(); // Close all the SmallBoxes with animation
+
+$.sidePanelKill(); <span style="font-family: Arial, Verdana, sans-serif;">// Close all the SidePanels with animation</span>
+
+$.bigBoxKill(); <span style="font-family: Arial, Verdana, sans-serif;">// Close all the BigBoxes with animation</span>
+
+$.metroLoadingKill(); <span style="font-family: Arial, Verdana, sans-serif;">// Close all the Loadings with animation</span>
+
+
+&lt;/script&gt;</pre>
+<p>
+	&nbsp;</p>
+<p>
+	Important, if you are using the previous MetroUnLoading(), you should create this function to reduce the impact on your production machine</p>
+<p>
+	(OPTIONAL) THIS IS NOT REQUIRED IF YOU START WITH VERSION 7</p>
+<div>
+	&nbsp;</div>
+<pre class="prettyprint lang-js linenums">
+function MetroUnLoading() 
+{
+   <span style="font-family: Arial, Verdana, sans-serif;">$.metroLoadingKill(); </span>
+}</pre>
+</section>
+<section id="smallbox_properties">
+	<div class="page-header"><h3>SmallBox Properties</h3><hr class="notop"></div>
+<table border="1" cellpadding="1" cellspacing="1" style="width: 800px;">
+	<tbody>
+		<tr>
+			<td>
+				Property</td>
+			<td>
+				Default Value</td>
+			<td>
+				Custom Value</td>
+			<td>
+				Description</td>
+		</tr>
+		<tr>
+			<td>
+				position</td>
+			<td>
+				1</td>
+			<td>
+				2,3,4</td>
+			<td>
+				1: Top corner right<br>
+				2: Top corner left<br>
+				3: Bottom corner left<br>
+				4: Bottom corner right</td>
+		</tr>
+		<tr>
+			<td>
+				title</td>
+			<td>
+				undefined</td>
+			<td>
+				&quot;This is my title&quot;</td>
+			<td>
+				SmallBox Title</td>
+		</tr>
+		<tr>
+			<td>
+				content</td>
+			<td>
+				&quot;&quot;</td>
+			<td>
+				Any Text or small HTML fragment</td>
+			<td>
+				SmallBox Content. You can add even small HTML fragment like images, links, headers and other stuff inside this.</td>
+		</tr>
+		<tr>
+			<td>
+				width</td>
+			<td>
+				350</td>
+			<td>
+				400, 500, 150</td>
+			<td>
+				SmallBaxk width size in pixels</td>
+		</tr>
+		<tr>
+			<td>
+				img</td>
+			<td>
+				undefined</td>
+			<td>
+				&quot;image/path/image.jpg</td>
+			<td>
+				Path of the Image. I recommend 200x200 image</td>
+		</tr>
+		<tr>
+			<td>
+				icon</td>
+			<td>
+				undefined</td>
+			<td>
+				&quot;path/of/theicon/icon.png&quot;</td>
+			<td>
+				This is the small image or icon placed on the bottom right corner of the smallbox.</td>
+		</tr>
+		<tr>
+			<td>
+				fa</td>
+			<td>
+				undefined</td>
+			<td>
+				&quot;fa-star-o&quot;</td>
+			<td>
+				Can use any Font-Awesome icon just by entering the name.<br>
+				More info about font-awesome here: <a href="http://fortawesome.github.io/Font-Awesome/">Font-Awesome</a></td>
+		</tr>
+		<tr>
+			<td>
+				sound</td>
+			<td>
+				true</td>
+			<td>
+				false</td>
+			<td>
+				Enabled or disabled the sound</td>
+		</tr>
+		<tr>
+			<td>
+				soundpath</td>
+			<td>
+				&quot;static/sound/&quot;</td>
+			<td>
+				&quot;path/of/sound/&quot;</td>
+			<td>
+				If you are using a custom path, you will required to change this</td>
+		</tr>
+		<tr>
+			<td>
+				color</td>
+			<td>
+				&quot;#6D1D99&quot;</td>
+			<td>
+				Any HTML color with the #</td>
+			<td>
+				You can use any HTML color in here.</td>
+		</tr>
+		<tr>
+			<td>
+				timeout</td>
+			<td>
+				undefined</td>
+			<td>
+				1000, 2000</td>
+			<td>
+				1000 = 1 second<br>
+				2000 = 2 seconds</td>
+		</tr>
+		<tr>
+			<td>
+				colortime</td>
+			<td>
+				1000</td>
+			<td>
+				2000</td>
+			<td>
+				Time color change interval</td>
+		</tr>
+		<tr>
+			<td>
+				delay</td>
+			<td>
+				&nbsp;</td>
+			<td>
+				&nbsp;</td>
+			<td>
+				&nbsp;</td>
+		</tr>
+		<tr>
+			<td>
+				colors</td>
+			<td>
+				[]</td>
+			<td>
+				[&quot;#6D1D99&quot;, &quot;#6D1D99&quot;,&quot;#6D1D99&quot;]</td>
+			<td>
+				You can add an array of colors, when you use this property, it will change the color of the notification</td>
+		</tr>
+		<tr>
+			<td>
+				closeonclick</td>
+			<td>
+				true</td>
+			<td>
+				false</td>
+			<td>
+				Enabled or disabled the click to close event.<br>
+				Important: If you use buttons, this property will auto set to true</td>
+		</tr>
+		<tr>
+			<td>
+				buttons</td>
+			<td>
+				[]</td>
+			<td>
+				[&quot;button 1&quot;,&quot;button 2&quot;,&quot;button 3&quot;]</td>
+			<td>
+				And array of buttons. You can create any number of buttoms.</td>
+		</tr>
+		<tr>
+			<td>
+				buttonhover</td>
+			<td>
+				&quot;#3E006E&quot;</td>
+			<td>
+				&quot;#6D1D99&quot;</td>
+			<td>
+				Any HTML color, you will see this when mouse is over the button</td>
+		</tr>
+	</tbody>
+</table>
+</section>
+<section id="bigbox_properties">
+	<div class="page-header"><h3>BigBox Properties</h3><hr class="notop"></div>
+<table border="1" cellpadding="1" cellspacing="1" style="width: 800px;">
+	<tbody>
+		<tr>
+			<td>
+				Property</td>
+			<td>
+				Default Value</td>
+			<td>
+				Custom Value</td>
+			<td>
+				Description</td>
+		</tr>
+		<tr>
+			<td>
+				position</td>
+			<td>
+				1</td>
+			<td>
+				2</td>
+			<td>
+				1: Bottom right corner<br>
+				2: Bottom left corner</td>
+		</tr>
+		<tr>
+			<td>
+				title</td>
+			<td>
+				undefined</td>
+			<td>
+				&quot;Some title&quot;</td>
+			<td>
+				BigBox Title</td>
+		</tr>
+		<tr>
+			<td>
+				content</td>
+			<td>
+				&quot;&quot;</td>
+			<td>
+				&quot;Some random content&quot;</td>
+			<td>
+				Some text or an HTML fragment</td>
+		</tr>
+		<tr>
+			<td>
+				width</td>
+			<td>
+				350</td>
+			<td>
+				&nbsp;</td>
+			<td>
+				&nbsp;</td>
+		</tr>
+		<tr>
+			<td>
+				img</td>
+			<td>
+				undefined</td>
+			<td>
+				&quot;image/path/image.png&quot;</td>
+			<td>
+				This is an small image icon</td>
+		</tr>
+		<tr>
+			<td>
+				fa</td>
+			<td>
+				&quot;fa-star&quot;</td>
+			<td>
+				&quot;fa-save&quot;</td>
+			<td>
+				Any Font Awesome Icon.<br>
+				More info about Font Awesome <a href="http://fortawesome.github.io/Font-Awesome/"> HERE</a></td>
+		</tr>
+		<tr>
+			<td>
+				sound</td>
+			<td>
+				true</td>
+			<td>
+				false</td>
+			<td>
+				Enabled or Disabled the sound</td>
+		</tr>
+		<tr>
+			<td>
+				soundpath</td>
+			<td>
+				&quot;static/sound/&quot;</td>
+			<td>
+				&quot;custom/sound/path/&quot;</td>
+			<td>
+				If you are not using the normal static/sound/ folder</td>
+		</tr>
+		<tr>
+			<td>
+				color</td>
+			<td>
+				&quot;#6D1D99&quot;</td>
+			<td>
+				&quot;#3E006E&quot;</td>
+			<td>
+				Any HTML color</td>
+		</tr>
+		<tr>
+			<td>
+				timeout</td>
+			<td>
+				undefined</td>
+			<td>
+				2000</td>
+			<td>
+				BigBox timeout function.<br>
+				1000 = 1 second<br>
+				2000 = 2 seconds<br>
+				3000 = 3 seconds</td>
+		</tr>
+		<tr>
+			<td>
+				colortime</td>
+			<td>
+				1000</td>
+			<td>
+				2000</td>
+			<td>
+				Change bigbox and tab color timer</td>
+		</tr>
+		<tr>
+			<td>
+				delay</td>
+			<td>
+				0</td>
+			<td>
+				1</td>
+			<td>
+				Delay the enter animation in seconds<br>
+				1 : 1 second 2 : 2 seconds 3 : 3 seconds</td>
+		</tr>
+		<tr>
+			<td>
+				colors</td>
+			<td>
+				[]</td>
+			<td>
+				[&quot;#3E006E&quot;,&quot;#3E006E&quot;,&quot;#3E006E&quot;]</td>
+			<td>
+				Array of HTML colors with # character</td>
+		</tr>
+		<tr>
+			<td>
+				closeicon</td>
+			<td>
+				true</td>
+			<td>
+				false</td>
+			<td>
+				Enabled or disabled the Close CROSS icon.<br>
+				Important: using buttons this property is automatically set to true</td>
+		</tr>
+		<tr>
+			<td>
+				tabicon</td>
+			<td>
+				true</td>
+			<td>
+				false</td>
+			<td>
+				If you want to show or hide the tab icon.</td>
+		</tr>
+		<tr>
+			<td>
+				buttons</td>
+			<td>
+				[]</td>
+			<td>
+				[&quot;Button 1&quot;,&quot;Button 2&quot;,&quot;Button 3&quot;]</td>
+			<td>
+				Array of buttons</td>
+		</tr>
+		<tr>
+			<td>
+				buttonhover</td>
+			<td>
+				&quot;#3E006E&quot;</td>
+			<td>
+				&quot;#6D1D99&quot;</td>
+			<td>
+				Any HTML color for mouse hover</td>
+		</tr>
+		<tr>
+			<td>
+				number</td>
+			<td>
+				undefined</td>
+			<td>
+				&quot;12&quot;, &quot;Any small text&quot;</td>
+			<td>
+				This is a footer text that appear in the BigBox</td>
+		</tr>
+	</tbody>
+</table>
+</section>
+<section id="messagebox_and_inputs">
+	<div class="page-header"><h3>Messagebox and Inputs</h3><hr class="notop"></div>
+<table border="1" cellpadding="1" cellspacing="1" style="width: 800px;">
+	<tbody>
+		<tr>
+			<td>
+				Property</td>
+			<td>
+				Default Value</td>
+			<td>
+				Custom Value</td>
+			<td>
+				Description</td>
+		</tr>
+		<tr>
+			<td>
+				title</td>
+			<td>
+				undefined</td>
+			<td>
+				&quot;Some Title&quot;</td>
+			<td>
+				Input or Messagebox title</td>
+		</tr>
+		<tr>
+			<td>
+				content</td>
+			<td>
+				undefined</td>
+			<td>
+				&quot;Any text or HTML content&quot;</td>
+			<td>
+				Input or Messagebox content, can hold HTML content</td>
+		</tr>
+		<tr>
+			<td>
+				normalbutton</td>
+			<td>
+				undefined</td>
+			<td>
+				&quot;#232323&quot;</td>
+			<td>
+				Button starting color. ( require # char)</td>
+		</tr>
+		<tr>
+			<td>
+				activebutton</td>
+			<td>
+				&quot;#6D1D99&quot;</td>
+			<td>
+				&quot;#232323&quot;</td>
+			<td>
+				Default button and Hover color</td>
+		</tr>
+		<tr>
+			<td>
+				buttons</td>
+			<td>
+				[]</td>
+			<td>
+				[&quot;button 1&quot;, &quot;button 2&quot;, &quot;button 3&quot;]</td>
+			<td>
+				Array of buttons</td>
+		</tr>
+		<tr>
+			<td>
+				icons</td>
+			<td>
+				[]</td>
+			<td>
+				[&quot;fa-save&quot;,&quot;fa-star-o&quot;,&quot;fa-edit&quot;]</td>
+			<td>
+				Array of Font Awesome icon text.<br>
+				for more info about Font Awesome <a href="http://fortawesome.github.io/Font-Awesome/">Here</a></td>
+		</tr>
+		<tr>
+			<td>
+				defaultbutton</td>
+			<td>
+				undefined</td>
+			<td>
+				1, 2, 3</td>
+			<td>
+				Number of the default button.</td>
+		</tr>
+		<tr>
+			<td>
+				sound</td>
+			<td>
+				true</td>
+			<td>
+				false</td>
+			<td>
+				Enabled or disabled the sound</td>
+		</tr>
+		<tr>
+			<td>
+				input</td>
+			<td>
+				undefined</td>
+			<td>
+				&quot;input&quot;</td>
+			<td>
+				&quot;text&quot; for a input text<br>
+				&quot;textarea&quot; for a input textarea<br>
+				&quot;password&quot; for a input password<br>
+				&quot;email&quot; for a input email<br>
+				&quot;select&quot; for a input select</td>
+		</tr>
+		<tr>
+			<td>
+				placeholder</td>
+			<td>
+				&quot;&quot;</td>
+			<td>
+				&quot;Placeholder&quot;</td>
+			<td>
+				Input PlaceHolder</td>
+		</tr>
+		<tr>
+			<td>
+				maxlength</td>
+			<td>
+				1000</td>
+			<td>
+				100</td>
+			<td>
+				Character length for the input box</td>
+		</tr>
+		<tr>
+			<td>
+				showcounter</td>
+			<td>
+				true</td>
+			<td>
+				false</td>
+			<td>
+				Show or hide the character counter</td>
+		</tr>
+		<tr>
+			<td>
+				options</td>
+			<td>
+				[]</td>
+			<td>
+				[&quot;Option 1&quot;,&quot;Option 2&quot;,&quot;Option 3&quot;]</td>
+			<td>
+				This is the text for the Select Input</td>
+		</tr>
+		<tr>
+			<td>
+				values</td>
+			<td>
+				[]</td>
+			<td>
+				[&quot;1&quot;,&quot;2&quot;,&quot;3&quot;]</td>
+			<td>
+				This is the value for the select input.<br>
+				Important: If there are more Options than values, it will return the Text as Value</td>
+		</tr>
+		<tr>
+			<td>
+				soundpath</td>
+			<td>
+				&quot;static/sound/&quot;</td>
+			<td>
+				&quot;custom/path/sound/&quot;</td>
+			<td>
+				Custom paht sound, if you are using a relative path</td>
+		</tr>
+		<tr>
+			<td>
+				backgroundcolor</td>
+			<td>
+				&quot;#000000&quot;</td>
+			<td>
+				&quot;#6D1D99&quot;</td>
+			<td>
+				Background HTML color</td>
+		</tr>
+		<tr>
+			<td>
+				backgroundcontent</td>
+			<td>
+				&quot;#232323&quot;</td>
+			<td>
+				&quot;#6D1D99&quot;</td>
+			<td>
+				Main content color. Can be any HTML color</td>
+		</tr>
+		<tr>
+			<td>
+				blockpage</td>
+			<td>
+				true</td>
+			<td>
+				false</td>
+			<td>
+				Blocks the scroll on desktops</td>
+		</tr>
+		<tr>
+			<td>
+				opacity</td>
+			<td>
+				0.7</td>
+			<td>
+				0.3</td>
+			<td>
+				Background opacity<br>
+				1: full opacity 0.1: almost transparent</td>
+		</tr>
+		<tr>
+			<td>
+				colortime</td>
+			<td>
+				1500</td>
+			<td>
+				2000</td>
+			<td>
+				Change color at that time<br>
+				1000: 1 second<br>
+				2000: 2 seconds</td>
+		</tr>
+		<tr>
+			<td>
+				colors</td>
+			<td>
+				[]</td>
+			<td>
+				[&quot;#6D1D99&quot;,&quot;#6D1D99&quot;]</td>
+			<td>
+				Color array, for auto change the background and content</td>
+		</tr>
+		<tr>
+			<td>
+				timeout</td>
+			<td>
+				undefined</td>
+			<td>
+				5000</td>
+			<td>
+				5000: 5 seconds to auto close</td>
+		</tr>
+	</tbody>
+</table>
+</section>
+<section id="metro_loading">
+	<div class="page-header"><h3>Metro Loading</h3><hr class="notop"></div>
+<table border="1" cellpadding="1" cellspacing="1" style="width: 800px;">
+	<tbody>
+		<tr>
+			<td>
+				Property</td>
+			<td>
+				Default Value</td>
+			<td>
+				Custom Value</td>
+			<td>
+				Description</td>
+		</tr>
+		<tr>
+			<td>
+				title</td>
+			<td>
+				undefined</td>
+			<td>
+				&quot;Some Title&quot;</td>
+			<td>
+				Metro Loading Title</td>
+		</tr>
+		<tr>
+			<td>
+				content</td>
+			<td>
+				undefined</td>
+			<td>
+				&quot;Any text or HTML fragment&quot;</td>
+			<td>
+				&nbsp;</td>
+		</tr>
+		<tr>
+			<td>
+				fa</td>
+			<td>
+				undefined</td>
+			<td>
+				&quot;fa-spinner&quot;</td>
+			<td>
+				Custom Font-Awesome Loading</td>
+		</tr>
+		<tr>
+			<td>
+				blockpage</td>
+			<td>
+				true</td>
+			<td>
+				false</td>
+			<td>
+				Block the background until Loading is closed.</td>
+		</tr>
+		<tr>
+			<td>
+				timeout</td>
+			<td>
+				undefined</td>
+			<td>
+				4000</td>
+			<td>
+				auto close on:<br>
+				1000: 1 second<br>
+				2000: 2 seconds<br>
+				3000: 3 seconds</td>
+		</tr>
+		<tr>
+			<td>
+				texts</td>
+			<td>
+				[]</td>
+			<td>
+				[&quot;I&#39;m loading&quot;,&quot;Please wait&quot;,&quot;Loading...&quot;]</td>
+			<td>
+				Use this property for a Special loading. This is an array of contents.</td>
+		</tr>
+		<tr>
+			<td>
+				backgroundcolor</td>
+			<td>
+				&quot;#000000&quot;</td>
+			<td>
+				&quot;#232323&quot;</td>
+			<td>
+				Any HTML color for the background</td>
+		</tr>
+		<tr>
+			<td>
+				backgroundcontent</td>
+			<td>
+				&quot;#232323&quot;</td>
+			<td>
+				&quot;#000000&quot;</td>
+			<td>
+				Any HTML color for the content</td>
+		</tr>
+		<tr>
+			<td>
+				opacity</td>
+			<td>
+				0.7</td>
+			<td>
+				0.2</td>
+			<td>
+				Background Opacity<br>
+				1: Full Opacity<br>
+				0.1: almost transparent</td>
+		</tr>
+		<tr>
+			<td>
+				colortime</td>
+			<td>
+				1500</td>
+			<td>
+				2000</td>
+			<td>
+				change color at that time</td>
+		</tr>
+		<tr>
+			<td>
+				colors</td>
+			<td>
+				[]</td>
+			<td>
+				[&quot;#000000&quot;,&quot;#000000&quot;,&quot;#000000&quot;]</td>
+			<td>
+				Color array that will change automatically</td>
+		</tr>
+	</tbody>
+</table>
+</section>
+<section id="metro_sidepanel">
+	<div class="page-header"><h3>Metro SidePanel</h3><hr class="notop"></div>
+<table border="1" cellpadding="1" cellspacing="1" style="width: 800px;">
+	<tbody>
+		<tr>
+			<td>
+				Property</td>
+			<td>
+				Default Value</td>
+			<td>
+				Custom Value</td>
+			<td>
+				Description</td>
+		</tr>
+		<tr>
+			<td>
+				position</td>
+			<td>
+				1</td>
+			<td>
+				2</td>
+			<td>
+				1: Right position<br>
+				2: Left position</td>
+		</tr>
+		<tr>
+			<td>
+				title</td>
+			<td>
+				undefined</td>
+			<td>
+				&quot;Some title&quot;</td>
+			<td>
+				Sidebar title</td>
+		</tr>
+		<tr>
+			<td>
+				content</td>
+			<td>
+				undefined</td>
+			<td>
+				&quot;Any Text or Small HTML fragment&quot;</td>
+			<td>
+				Any text or HTML fragment can be place in here</td>
+		</tr>
+		<tr>
+			<td>
+				iframe</td>
+			<td>
+				undefined</td>
+			<td>
+				&quot;http://m.wikipedia.com&quot;</td>
+			<td>
+				iframe src. In other words, the path of the secundary page that you want to show</td>
+		</tr>
+		<tr>
+			<td>
+				iframecache</td>
+			<td>
+				true</td>
+			<td>
+				false</td>
+			<td>
+				Enabled or disabled the iframe cache</td>
+		</tr>
+		<tr>
+			<td>
+				loadingmessage</td>
+			<td>
+				&quot;Loading&quot;</td>
+			<td>
+				&quot;Wait...&quot;</td>
+			<td>
+				For a custom Loading message</td>
+		</tr>
+		<tr>
+			<td>
+				width</td>
+			<td>
+				250</td>
+			<td>
+				400</td>
+			<td>
+				SidePanel Width</td>
+		</tr>
+		<tr>
+			<td>
+				fa</td>
+			<td>
+				undefined</td>
+			<td>
+				&quot;fa-star-o&quot;</td>
+			<td>
+				Font Awesome icon name</td>
+		</tr>
+		<tr>
+			<td>
+				faloading</td>
+			<td>
+				&quot;fa-refresh&quot;</td>
+			<td>
+				&quot;fa-gear&quot;</td>
+			<td>
+				Custom Font Awesome spinner.<br>
+				More info about Font Awesome <a href="http://fortawesome.github.io/Font-Awesome/">Here</a></td>
+		</tr>
+		<tr>
+			<td>
+				img</td>
+			<td>
+				undefined</td>
+			<td>
+				&quot;image/path/image.png&quot;</td>
+			<td>
+				Path of an image icon</td>
+		</tr>
+		<tr>
+			<td>
+				shadow</td>
+			<td>
+				true</td>
+			<td>
+				false</td>
+			<td>
+				Enabled or disabled shadow</td>
+		</tr>
+		<tr>
+			<td>
+				backgroundcontent</td>
+			<td>
+				&quot;#662d91&quot;</td>
+			<td>
+				&quot;#232323&quot;</td>
+			<td>
+				Any HTML color background</td>
+		</tr>
+		<tr>
+			<td>
+				colortime</td>
+			<td>
+				1500</td>
+			<td>
+				2000</td>
+			<td>
+				Color change timer</td>
+		</tr>
+		<tr>
+			<td>
+				colors</td>
+			<td>
+				[]</td>
+			<td>
+				[&quot;#232323&quot;,&quot;#232323&quot;,&quot;#232323&quot;]</td>
+			<td>
+				Array of HTML colors.</td>
+		</tr>
+		<tr>
+			<td>
+				timeout</td>
+			<td>
+				undefined</td>
+			<td>
+				2000</td>
+			<td>
+				Auto close on:<br>
+				2000: 2 seconds<br>
+				5000: 5 seconds</td>
+		</tr>
+		<tr>
+			<td>
+				blocked</td>
+			<td>
+				false</td>
+			<td>
+				true</td>
+			<td>
+				Block the SidePanel. you will need to manually close the SidePanel using $.metroLoadingKill(); function</td>
+		</tr>
+	</tbody>
+</table>
+</section>
+<section id="ending">
+	<div class="page-header"><h3>Ending</h3><hr class="notop"></div>
+<p>
+	I just want to thank you once again for making Metro Notifications reach v7.</p>
+<p>
+	&nbsp;</p>
+<p>
+	Is for you that this is my best plugin on CodeCanyon!</p>
+<p>
+	&nbsp;</p>
+<p>
+	I made HUUUUGE updates on:</p>
+<ul>
+	<li>
+		Metro Modal &nbsp;<a href="http://codecanyon.net/item/metro-modal/5337148?WT.ac=portfolio&amp;WT.z_author=klerith&amp;ref=klerith">http://codecanyon.net/item/metro-modal/5337148?WT.ac=portfolio&amp;WT.z_author=klerith&amp;ref=klerith</a></li>
+	<li>
+		Metro Banner&nbsp;<a href="http://codecanyon.net/item/metro-banner/4384607?WT.ac=portfolio&amp;WT.z_author=klerith&amp;ref=klerith">http://codecanyon.net/item/metro-banner/4384607?WT.ac=portfolio&amp;WT.z_author=klerith&amp;ref=klerith</a></li>
+</ul>
+<p>
+	&nbsp;</p>
+<p>
+	And my new ones:</p>
+<ul>
+	<li>
+		Yose Modal&nbsp;<a href="http://codecanyon.net/item/yose-modal/8776097?WT.ac=portfolio&amp;WT.z_author=klerith&amp;ref=klerith">http://codecanyon.net/item/yose-modal/8776097?WT.ac=portfolio&amp;WT.z_author=klerith&amp;ref=klerith</a></li>
+	<li>
+		Klerith Auto Dealer Showcase&nbsp;<a href="http://codecanyon.net/item/klerith-auto-dealer-showcase/8988391?WT.ac=portfolio&amp;WT.z_author=klerith">http://codecanyon.net/item/klerith-auto-dealer-showcase/8988391?WT.ac=portfolio&amp;WT.z_author=klerith</a></li>
+</ul>
+<p>
+	&nbsp;</p>
+<p>
+	Remember you have my support for all of my plugins.</p>
+<p>
+	&nbsp;</p>
+<p>
+	I will try to contact you ASAP when you have any Issue.</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	Please Rate the plugin when you have time and write a comment, that helps me a lot! and will give me the motivation to keep making this Plugin top of the line.</p>
+<p>
+	&nbsp;</p>
+<p>
+	Cya!</p>
+<p>
+	&nbsp;</p>
+<p>
+	Atte:</p>
+<p>
+	Fernando Herrera (Klerith)</p>
+</section>
+
+
+
+    <hr />
+
+<footer>
+    <p>Copyright Klerith 2014 made with the <a href="http://rxa.li/documenter">Documenter v2.0</a></p>
+</footer>
+
+</div><!-- /container --> 
+
+<!-- Le javascript
+    ================================================== --> 
+<!-- Placed at the end of the document so the pages load faster --> 
+<script>document.createElement('section');var duration='500',easing='swing';</script>
+<script src="assets/js/jquery.js"></script> 
+<script src="assets/js/jquery.scrollTo.js"></script>
+<script src="assets/js/jquery.easing.js"></script>
+<script src="assets/js/scripts.js"></script> 
+<script src="assets/js/google-code-prettify/prettify.js"></script> 
+<script src="assets/js/bootstrap-min.js"></script> 
+</body>
+</html>

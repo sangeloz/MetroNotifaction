@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Metro Generator for v7</title>
+ 
+	<!-- Generator Style -->
+	<link rel="stylesheet" type="text/css" href="static/css/generator.style.css">
+
+
+	<!-- jQuery needed to run the puglin (needed) -->
+	<script src="static/js/jquery-1.11.1.min.js"></script>
+
+	<!-- Angular JS -->
+	<script src="static/js/angular.js"></script>
+
+	<!-- Style -->
+	<link rel="stylesheet" type="text/css" href="static/css/style.css">
+
+	<link rel="stylesheet" type="text/css" href="static/css/MetroMenu.min.css">
+	<script src="static/js/MetroMenu.min.js"></script>
+
+
+</head>
+<body ng-controller="pageCtrl">
+
+<div class="container">
+	<div class="starter-template">	
+
+	<h1 class="purp">Metro Generator</h1>
+	<h3>For Metro Notifications v7 ONLY</h3>
+	
+	<p>
+		This generator will give you the code needed to create every Notification
+		<br> 
+		But you <strong class="red">CAN'T</strong> use the files inside, because are adapted for this generator.
+	</p>
+
+	<p>
+		<br/>
+		Also, the Menu used in this generator is called:
+		<br/>
+		<a href="http://codecanyon.net/item/metro-menu/4476162?ref=klerith">Metro Menu</a>
+		<br/>
+		Please purchase the license if you are planning to use it in other projects.
+	</p>
+
+	</div>
+</div>
+
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+	$.MetroMenu( 
+		{
+			animation: "fadeInUp fast", 
+			position: "bottom", 
+			withtooltip: false,
+			closeonclick: false,
+			escclose: false, 
+			items:[
+				{   name: "Small Box",
+					icon: "static/img/smallbox.png",
+					link: "pages/smallbox.html"
+				},
+				{   name: "Big Box",
+					icon: "static/img/bigbox.png",
+					link: "pages/bigbox.html"
+				},
+				{   name: "Side Panel",
+					icon: "static/img/sidepanel.png",
+					link: "pages/sidepanel.html"
+				},
+				{   name: "Loadings",
+					icon: "static/img/loading.png",
+					link: "pages/loading.html"
+				},
+				{   name: "Msg & Inputs",
+					icon: "static/img/messagebox.png",
+					link: "pages/messagebox.html"
+				}]
+		}
+	);
+});
+</script>
+
+</body>
+</html>

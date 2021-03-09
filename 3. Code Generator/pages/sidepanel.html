@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html ng-app="generatorApp">
+<head>
+	<title>Metro Generator</title>
+	
+ 
+	<!-- Generator Style -->
+	<link rel="stylesheet" type="text/css" href="../static/css/generator.style.css">
+
+
+	<!-- jQuery needed to run the puglin (needed) -->
+	<script src="../static/js/jquery-1.11.1.min.js"></script>
+
+	<!-- Angular JS -->
+	<script src="../static/js/angular.js"></script>
+
+
+	<!-- Font Awesome  -->
+	<link rel="stylesheet" href="../static/font-awesome/css/font-awesome.min.css">
+
+	<!-- JS Color -->
+	<script src="../static/js/jscolor/jscolor.js"></script>
+
+	<!-- Metro Notifications -->
+	<script src="../static/js/MetroNotification.js"></script>
+	<link rel="stylesheet" type="text/css" href="../static/css/MetroNotificationStyle.css">
+
+	<!-- Style -->
+	<link rel="stylesheet" type="text/css" href="../static/css/style.css">
+
+
+	
+</head>
+<body ng-controller="pageCtrl">
+
+
+	<h1>Side Panel</h1>
+	<br>
+
+	<table class="table" border="0" style="width:600px;">
+        
+
+        <tr>
+			<td>position:</td>
+			<td>
+				<select ng-model="position" placeholder="(optional)">
+					<option value="1">Right</option>
+					<option value="2">Left</option>
+				</select>
+			</td>
+		</tr>
+        <tr>
+			<td>title:</td>
+			<td>
+				<input type="text" ng-model="title" placeholder="(optional)">
+			</td>
+		</tr>
+        <tr>
+			<td>content:</td>
+			<td>
+				<textarea type="text" ng-model="content" placeholder="(optional)"></textarea>
+				<br/>
+				<span>this can be a small HTML fragment</span>
+			</td>
+		</tr>
+        <tr>
+			<td>iframe:</td>
+			<td>
+				<input type="text" ng-model="iframe" placeholder="http:// .... path/to/Other/Page">
+			</td>
+		</tr>
+        <tr>
+			<td>iframecache:</td>
+			<td>
+				<select ng-model="iframecache" placeholder="(optional)">
+					<option value="1">Yes, with loading</option>
+					<option value="0">No</option>
+				</select>	
+			</td>
+		</tr>
+        <tr>
+			<td>loadingmessage:</td>
+			<td>
+				<input type="text" ng-model="loadingmessage" placeholder="(optional)">
+			</td>
+		</tr>
+        <tr>
+			<td>width:</td>
+			<td>
+				<input type="text" class="onlynumbers" ng-model="width" placeholder="(optional)">
+			</td>
+		</tr>
+        <tr>
+			<td>faloading:</td>
+			<td>
+				<select type="text" ng-model="faloading" placeholder="(optional)">
+					<option value="fa-refresh">fa-refresh</option>
+					<option value="fa-sun-o">fa-sun-o</option>
+					<option value="fa-star-o">fa-star-o</option>
+					<option value="fa-circle-o-notch">fa-circle-o-notch</option>
+					<option value="fa-cog">fa-cog</option>
+					<option value="fa-spinner">fa-spinner</option>
+				</select>
+			</td>
+		</tr>
+        <tr>
+			<td>fa:</td>
+			<td>
+				<select ng-model="fa">
+					<option value="1">Yes, With font Icon</option>
+					<option value="0">No, I don't want an Icon</option>
+				</select>
+			</td>
+		</tr>
+        <tr>
+			<td>img:</td>
+			<td>
+				<select ng-model="img">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</select>
+			</td>
+		</tr>
+        <tr>
+			<td>shadow:</td>
+			<td>
+				<select ng-model="shadow">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</select>
+			</td>
+		</tr>
+        <tr>
+			<td>backgroundcontent:</td>
+			<td>
+				<input type="text" class="color" ng-model="backgroundcontent" placeholder="(optional)">
+			</td>
+		</tr>
+        <tr>
+			<td>colortime:</td>
+			<td>
+				<select ng-model="colortime">
+					<option value="1500">Change every 1.5  seconds</option>
+					<option value="2000">Change every 2  seconds</option>
+					<option value="2500">Change every 2.5  seconds</option>
+					<option value="3000">Change every 3  seconds</option>
+				</select>
+			</td>
+		</tr>
+        <tr>
+			<td>colors:</td>
+			<td>
+				<textarea type="text" ng-model="colors" placeholder="(optional)" readonly="readonly"></textarea>
+				<br/>
+				<button class="btn btn-success" ng-click="AddColor()"><i class="fa fa-plus"></i> Add Color to array</button>
+				<button class="btn btn-danger" ng-click="colors=''; firstColor=true;"><i class="fa fa-trash-o"></i> Clear Array</button>
+				<br/>
+				<input type="text" ng-model="newColor" class="color smallBox">
+			</td>
+		</tr>
+        <tr>
+			<td>timeout:</td>
+			<td>
+				<select ng-model="timeout">
+					<option value="0">No</option>
+					<option value="2000">Timeout on 2 seconds</option>
+					<option value="3000">Timeout on 3 seconds</option>
+					<option value="4000">Timeout on 4 seconds</option>
+					<option value="5000">Timeout on 5 seconds</option>
+				</select>
+			</td>
+		</tr>
+        <tr>
+			<td>blocked:</td>
+			<td>
+				<select ng-model="blocked">
+					<option value="0">No</option>
+					<option value="1">Yes, I want to block the Sidepanel</option>
+				</select>
+			</td>
+		</tr>
+
+
+
+	</table>
+
+
+
+
+<div class="divNeeded">
+
+	<textarea id="txtCodeNeeded" ng-model="codeneeded" placeholder="this is the code you need"></textarea>
+	<br>
+	<div align="center">
+		<button class="btn btn-primary" ng-click="GetCode()"><i class="fa fa-newspaper-o"></i> Code Generator </button>
+		<button class="btn btn-info" ng-click="TestCode()"><i class="fa fa-eraser"></i> Test the code </button>
+		<br/><br/>
+		<button id="botCloseAll" class="btn btn-danger" ng-click="CloseAll(); codeneeded='$.sidePanelKill();'"><i class="fa fa-trash-o"></i> Close All </button>
+	</div>
+
+</div>
+
+
+<script src="../static/js/sidepanel.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+/* ======================================== */
+/* 		      Metro Generator     			*/
+/*       For Metro Notifications v7     	*/
+/* ======================================== */
+
+1 - Just run the index.html
+
+2 - Please, do not use the MetroNotifications.js or any file in this folder. Because is addapted for the generator and may not work well on your project.
+
+3 - You can use the files inside the "Tutorial" folder or "Main Files" folder.
+
+4 - Thank you again for supporting my code.
+
+5 - I appreciate any feedback about the current version. 
+
+Have a great day!

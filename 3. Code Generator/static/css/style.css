@@ -1,0 +1,126 @@
+/* ====================================
+
+Basic CSS for the demo
+
+==================================== */
+body{
+	margin: 0px;
+}
+
+.smallBox{
+	width: 70px;
+}
+
+
+#botCloseAll{
+	z-index: 9999999999999;
+}
+
+#botKillLoading{
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+	z-index: 999999999999999999999;
+}
+
+
+textarea{
+	width: 300px;
+	height: 100px;
+}
+
+body {
+   margin: 0px;
+   padding-bottom: 100px;
+   margin-left: 20px;
+}
+
+h1{
+	font-weight: lighter;
+}
+
+h2{
+	margin-top: 50px;
+	font-weight: lighter;
+}
+h3{
+	font-weight: lighter;
+}
+
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+.mainContainer{
+	position: absolute;
+	left: 27%;
+	width: 600px;
+	top: 13%;
+}
+
+.demoImage{
+	width: 25px;
+}
+
+.puerto-btn-1{
+	margin-top: 10px;
+}
+
+.green{
+	color:#139B80;
+}
+
+.pink{
+	color: #B10DDF;
+}
+
+.red{
+	color: #e51400;
+}
+
+.purp{
+	color: #6D1D99;
+}
+
+.botPurp{
+	background-color: #92278f;
+}
+
+.botPurp:hover{
+	background-color: #721f70;
+}
+
+.teal{
+	color: #1ba1e2;
+}
+
+.teal2{
+	color: #00aba9;
+}
+
+.white{
+	color: white;
+}
+
+
+.orange{
+	color: #fa6800;
+}
+
+.smallImg{
+	width: 25px;
+}
+
+#botCloseLoading{
+	position: fixed;
+	top: 10px;
+	left: 10px;
+	z-index: 99999999999;
+	display: none;
+}
+
+.codeCanyonBanner{
+	width: 150px;
+}
+
